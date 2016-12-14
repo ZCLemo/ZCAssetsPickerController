@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  ZCAssetsPickerController
+//
+//  Created by 赵琛 on 2016/12/13.
+//  Copyright © 2016年 赵琛. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Macro.h"
+
+#endif /* PrefixHeader_pch */

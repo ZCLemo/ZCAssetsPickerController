@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZCAlbumCellId" rowHeight="60" id="KGk-i7-Jjw" customClass="ZCAlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TTL-42-dFS">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="zwW-kq-RZT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tW-NU-t8R">
+                        <rect key="frame" x="75" y="10" width="195" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Ie3-li-LDF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0O-4h-S0Q">
+                        <rect key="frame" x="75" y="34" width="195" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="qs8-uq-Kww"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxl-ay-kt2">
+                        <rect key="frame" x="275" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="448-kV-Tnp"/>
+                            <constraint firstAttribute="height" constant="40" id="dB6-Aj-ebU"/>
+                        </constraints>
+                        <state key="normal" image="ic_asset_unselected.png"/>
+                        <state key="selected" image="ic_asset_selected.png"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k0O-4h-S0Q" firstAttribute="top" secondItem="8tW-NU-t8R" secondAttribute="bottom" constant="3" id="5OA-uQ-0RU"/>
+                    <constraint firstAttribute="trailing" secondItem="k0O-4h-S0Q" secondAttribute="trailing" constant="50" id="IAJ-Sa-iKe"/>
+                    <constraint firstAttribute="trailing" secondItem="8tW-NU-t8R" secondAttribute="trailing" constant="50" id="KY6-CI-www"/>
+                    <constraint firstItem="8tW-NU-t8R" firstAttribute="leading" secondItem="TTL-42-dFS" secondAttribute="trailing" constant="15" id="Lik-d8-Z6P"/>
+                    <constraint firstItem="TTL-42-dFS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="P1m-4q-Xst"/>
+                    <constraint firstAttribute="trailing" secondItem="nxl-ay-kt2" secondAttribute="trailing" constant="5" id="ULg-kp-Bio"/>
+                    <constraint firstItem="8tW-NU-t8R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gLa-ah-jX4"/>
+                    <constraint firstItem="k0O-4h-S0Q" firstAttribute="leading" secondItem="TTL-42-dFS" secondAttribute="trailing" constant="15" id="hgI-My-Bai"/>
+                    <constraint firstItem="TTL-42-dFS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="m1n-fU-oZa"/>
+                    <constraint firstItem="nxl-ay-kt2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ogU-C0-B6p"/>
+                    <constraint firstAttribute="bottom" secondItem="TTL-42-dFS" secondAttribute="bottom" constant="-1" id="w1g-Mo-OJO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLb" destination="k0O-4h-S0Q" id="MZB-Ap-g6w"/>
+                <outlet property="nameLb" destination="8tW-NU-t8R" id="A0G-Z6-B7v"/>
+                <outlet property="selectedBtn" destination="nxl-ay-kt2" id="RBA-2q-Q8M"/>
+                <outlet property="thumbnailImageV" destination="TTL-42-dFS" id="smS-83-VGI"/>
+            </connections>
+            <point key="canvasLocation" x="111" y="-56"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_asset_selected.png" width="22" height="22"/>
+        <image name="ic_asset_unselected.png" width="22" height="22"/>
+    </resources>
+</document>
